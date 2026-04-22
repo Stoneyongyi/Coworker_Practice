@@ -400,3 +400,8 @@ FodyWeavers.xsd
 *.sln.iml
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp
+.idea/.idea.git協作練習/.idea/.gitignore
+.idea/.idea.git協作練習/.idea/.name
+.idea/.idea.git協作練習/.idea/encodings.xml
+.idea/.idea.git協作練習/.idea/indexLayout.xml
+.idea/.idea.git協作練習/.idea/vcs.xml

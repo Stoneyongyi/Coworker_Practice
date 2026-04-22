@@ -16,4 +16,9 @@ public class UserModel
         Phone = phone;
         Address = address;
     }
+
+    public UserModel()
+    {
+        
+    }
 }
