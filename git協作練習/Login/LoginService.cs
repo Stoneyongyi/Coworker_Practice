@@ -8,5 +8,8 @@ namespace git協作練習.Login
 {
     internal class LoginService
     {
+        int Number;
+
+
     }
 }
