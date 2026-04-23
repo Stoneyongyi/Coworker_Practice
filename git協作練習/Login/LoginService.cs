@@ -8,14 +8,43 @@ namespace git協作練習.Login
 {
     internal class LoginService
     {
-        public void User()
+
+        public bool UserLogin(LoginModel model)
         {
-            Console.Write("請輸入帳號:");
-            string Account = Console.ReadLine();
-            Console.Write("請輸入密碼:");
-            string Password = Console.ReadLine();
+            UserModel user = new UserModel();
+            user.Account = model.Account;
+            user.Password = model.Password;
+
+            bool isAccountOk = (model.Account == user.Account);
+            bool isPasswordOk = (model.Password == user.Password);
+
+            if (model.Account != null)
+            {
+                isAccountOk = true;
+
+            }
+            else
+            {
+                Console.WriteLine("請輸入帳號");
+            }
+
+            if (model.Password != null)
+            {
+                isPasswordOk = true;
+            }
+            else
+            {
+                Console.WriteLine("請輸入密碼");
+            }
+
+
+            return true;
 
         }
+
+
+
+
 
 
 
