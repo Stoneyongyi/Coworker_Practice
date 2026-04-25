@@ -17,8 +17,9 @@ public class UserModel
         Address = address;
     }
 
-    public UserModel()
+    public UserModel(string account, string password)
     {
-        
+        Account = account;
+        Password = password;
     }
 }

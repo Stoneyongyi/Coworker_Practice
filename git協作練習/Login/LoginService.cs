@@ -12,8 +12,7 @@ namespace git協作練習.Login
         public bool UserLogin(LoginModel model)
         {
             UserModel user = new UserModel();
-            user.Account = model.Account;
-            user.Password = model.Password;
+
 
             bool isAccountOk = (model.Account == user.Account);
             bool isPasswordOk = (model.Password == user.Password);
