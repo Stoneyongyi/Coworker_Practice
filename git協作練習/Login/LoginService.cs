@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using git協作練習.Register;
+using git協作練習.Utility;
 
 namespace git協作練習.Login
 {
     internal class LoginService
     {
-
         public bool UserLogin(LoginModel model)
         {
             UserModel user = new UserModel();
@@ -38,16 +39,7 @@ namespace git協作練習.Login
 
 
             return true;
-
         }
-
-
-
-
-
-
-
-
 
 
     }
