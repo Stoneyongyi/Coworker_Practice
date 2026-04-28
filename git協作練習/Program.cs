@@ -3,12 +3,6 @@ using git協作練習;
 using git協作練習.Login;
 using System.Reflection;
 
-
-
-
-
-
-
 bool userLogin = false;
 while (userLogin == false)
 {
