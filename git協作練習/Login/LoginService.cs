@@ -13,33 +13,31 @@ namespace git協作練習.Login
 
         public bool UserLogin(LoginModel model)
         {
-            UserModel user = new UserModel();
+            bool isCanLogin=false;
 
-
-            bool isAccountOk = (model.Account == user.Account);
-            bool isPasswordOk = (model.Password == user.Password);
-
-            if (model.Account != null)
-            {
-                isAccountOk = true;
-
-            }
-            else
+            if (model.Account == null)
             {
                 Console.WriteLine("請輸入帳號");
+                return isCanLogin;
             }
 
-            if (model.Password != null)
-            {
-                isPasswordOk = true;
-            }
-            else
+            if (model.Password == null)
             {
                 Console.WriteLine("請輸入密碼");
+                return isCanLogin;
             }
             
-            return true;
+            if(model.Account=="Abbie"&model.Password=="123456")
+            {
+                Mail.SendEmail(model.Account, "登入認證信", "請輸入驗證碼");
+                return true;
+            }
+
+            
+            return false;
+
         }
+
 
 
     }
