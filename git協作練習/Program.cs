@@ -6,7 +6,7 @@ using git協作練習.Register;
 
 try
 {
-    Console.WriteLine("歡迎使用 [XXX 註冊系統]！");
+    Console.WriteLine("歡迎使用 [圖書館註冊系統]！");
     Console.WriteLine("請依照指示完成註冊，讓我們開始吧！");
     Console.WriteLine("請輸入您的姓名：");
     string name = Console.ReadLine();
@@ -25,7 +25,7 @@ try
     Console.WriteLine(service.UserRegist(user) ? "恭喜您，註冊成功！歡迎加入我們的大家庭！" : "很抱歉，註冊失敗了。請稍後再試，或聯繫我們的客服團隊以獲取協助。");
 
     Console.WriteLine("註冊完成！接下來請重新輸入帳號與密碼進行登入。");
-    
+
     bool userLogin = false;
     while (userLogin == false)
     {
@@ -35,7 +35,7 @@ try
         string Password = Console.ReadLine();
         if (Account != null && Password != null)
         {
-           
+
             LoginModel loginModel = new LoginModel(Account, Password);
             LoginService loginService = new LoginService();
             userLogin = loginService.UserLogin(loginModel);
@@ -45,6 +45,7 @@ try
         if (userLogin)
         {
             Console.WriteLine("歡迎進入圖書管理系統");
+            Console.WriteLine("請選擇要前往藏書分類");
             break;
         }
     }
