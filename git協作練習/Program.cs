@@ -4,7 +4,7 @@ using git協作練習.Login;
 using System.Reflection;
 using git協作練習.Register;
 
-Console.WriteLine("歡迎來到 [XXX 註冊系統]！");
+Console.WriteLine("歡迎來到 [圖書管理註冊系統]！");
 Console.WriteLine("請依照指示完成註冊，讓我們開始吧！");
 Console.WriteLine("請輸入您的姓名：");
 string userName = Console.ReadLine();
@@ -35,6 +35,8 @@ Console.WriteLine("註冊完成！接下來請重新輸入帳號與密碼進行�
 bool userLogin = false;
 while (userLogin == false)
 {
+    Console.WriteLine("歡迎來到 [圖書管理登入系統]！");
+    Console.WriteLine("請依照指示完成登入，讓我們開始吧！");
     Console.Write("請輸入帳號:");
     string Account = Console.ReadLine();
     Console.Write("請輸入密碼:");
@@ -46,6 +48,7 @@ while (userLogin == false)
     if (userLogin == true)
     {
         Console.WriteLine("歡迎進入圖書管理系統");
+        Console.WriteLine("請選擇要前往藏書分類");
         break;
     }
 }
